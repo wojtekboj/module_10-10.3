@@ -1,1 +1,1 @@
-Link do zadania 10.3 https://wojtekboj.github.io/module_10-10.3/
+Link do zadania 10.3 https://wojtekboj.github.io/module_10-10.3/index.html
