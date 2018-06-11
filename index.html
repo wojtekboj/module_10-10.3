@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zadanie 10.3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="vendor/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="vendor/flickity.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="carousel" data-flickity>
+    </div>
+    <div class="progress-bar"></div>
+    <div class="button-group">
+        <button class="button">Restart</button>
+    </div>
+    <div id="map"></div>
+
+<script id="template_item" type="x-tmpl-mustache">
+    {{{ slides }}} {{{ description }}} {{{ title }}}
+    </div>
+</script>
+<script>
+        var slideList = [
+            {
+                image: 'Photo 1',
+                title: '<div class=\"container\"><header>Norway - Photo 1</header></div>',
+                description: "<div class=\"carousel-cell\" id=\"carousel-cell1\" style=\"background-image: url('https://images.unsplash.com/photo-1505731062052-e969cc043cc0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd09965184a708f31c3920e20eb68435&auto=format&fit=crop&w=1950&q=80');\">",
+                coords: {lat: 60.133090, lng: 6.754539}
+            },
+            {
+                image: 'Photo 2',
+                title: '<div class=\"container\"><header>Norway - Photo 2</header></div>',
+                description: "<div class=\"carousel-cell\" id=\"carousel-cell2\" style=\"background-image: url('https://images.unsplash.com/photo-1517345438041-cf88a04b4689?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=819c43af5a72b1ab7a320f3013faf305&auto=format&fit=crop&w=1950&q=80');\">",
+                coords: {lat: 67.935719, lng: 13.088874}
+            },
+            {
+                image: 'Photo 3',
+                title: '<div class=\"container\"><header>Norway - Photo 3</header></div>',
+                description: "<div class=\"carousel-cell\" id=\"carousel-cell3\" style=\"background-image: url('https://images.unsplash.com/photo-1525344387229-da3782d11618?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6bc11f05a69b5e51661f1ad842443ff&auto=format&fit=crop&w=1949&q=80');\">",
+                coords: {lat: 62.460185, lng: 7.670482}
+            },
+            {
+                image: 'Photo 4',
+                title: '<div class=\"container\"><header>Norway - Photo 4</header></div>',
+                description: "<div class=\"carousel-cell\" id=\"carousel-cell4\" style=\"background-image: url('https://images.unsplash.com/photo-1524932871115-5fe23832511f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f20602c088eeae6dcca2156560e5476&auto=format&fit=crop&w=1936&q=80');\">",
+                coords: {lat: 68.076395, lng: 13.239888}
+            },
+            {
+                image: 'Photo 5',
+                title: '<div class=\"container\"><header>Norway - Photo 5</header></div>',
+                description: "<div class=\"carousel-cell\" coords: {lat: 68.246094, lng: 13.564981} id=\"carousel-cell5\" style=\"background-image: url('https://images.unsplash.com/photo-1507377675307-7d7678c0b01d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8632cd2ff096e20657da46270178a764&auto=format&fit=crop&w=1951&q=80')\">",
+                coords: {lat: 68.246094, lng: 13.564981}
+            }
+        ];
+    </script>
+    <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="vendor/hash.js"></script>
+    <script src="vendor/mustache.js"></script>
+    <script src="js/scripts.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2MzRx6a8OAvuUPmHGzZiLD6-fUlystZw&callback=initMap"></script>
+</body>
+
+</html>
